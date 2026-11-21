@@ -1,0 +1,14 @@
+[versions]
+#noinspection AndroidGradlePluginVersion
+agp = "8.9.1"
+coreKtx = "1.18.0"
+kotlin = "2.3.21"
+pgs = "22.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+play-game = { group = "com.google.android.gms", name = "play-services-games-v2", version.ref = "pgs"}
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
